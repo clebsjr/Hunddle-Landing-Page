@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    background-image: url('../images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+header{
+    width: 87.84%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.wrapper{
+    width: 87.84%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.box1{
+    width: 690px;
+}
+
+.illutstration{
+    width: 100%;
+}
+
+.box2{
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+.box2 p{
+    color: #EFDBFF;
+}
+
+h1{
+    font-size: 38px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 60px;
+}
+
+button{
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    border: none;
+    box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.4);;
+    border-radius: 30px;
+    width: 200px;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+footer{
+    width: 87.84%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+.references{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.social{
+    font-size: 20px;
+    text-align: right;
+}
+
+.social i{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    border: solid 1px;
+    border-radius: 100px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.social a:hover{
+    color:  hsl(300, 69%, 71%);
+}
+
+.attribution { font-size: 11px; text-align: center;}
+.attribution a{ color: white; transition: 0.3s;}
+.attribution a:hover{ color: hsl(300, 69%, 71%); }
+
+@media screen and (max-width: 600px) {
+    body{
+        background-image: url('../images/bg-mobile.svg');
+    }
+    
+    header{
+        width: 85%;
+    }   
+
+    .wrapper{
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .box1{
+        width: 100%;
+    }
+    
+    .box2{
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    footer{
+        grid-template-columns: 1fr;
+        width: 85%;
+    }
+
+    .social{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        text-align: center;
+    }
+}
